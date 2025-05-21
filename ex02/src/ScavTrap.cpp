@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ScavTrap.cpp                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: hfilipe- <hfilipe-@student.42porto.com>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/05/21 20:44:53 by hfilipe-          #+#    #+#             */
+/*   Updated: 2025/05/21 20:45:28 by hfilipe-         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../includes/ScavTrap.hpp"
 
 ScavTrap::ScavTrap() {
@@ -16,11 +28,11 @@ ScavTrap::ScavTrap(const std::string _name) {
     std::cout << "ScavTrap parametrized constructor called" << std::endl;
 }
 
-ScavTrap::ScavTrap(const ScavTrap &other){
-        _name = other._name;
-        _hitPoints =  other._hitPoints;
-        _energyPoints = other._energyPoints;
-        _attackDamage = other._attackDamage;
+ScavTrap::ScavTrap(const ScavTrap &other) : ClapTrap(){
+    _name = other._name;
+    _hitPoints =  other._hitPoints;
+    _energyPoints = other._energyPoints;
+    _attackDamage = other._attackDamage;
     std::cout << "ScavTrap copy constructor called" << std::endl;
 }
 

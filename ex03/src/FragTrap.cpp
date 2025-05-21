@@ -1,22 +1,22 @@
 #include "FragTrap.hpp"
 
 FragTrap::FragTrap() {
-    _name = "Default Frag";
+    _name = "default Frag";
     _hitPoints = 100;
     _energyPoints = 100;
     _attackDamage = 30;
     std::cout << "FragTrap default constructor called" << std::endl;
 }
 
-FragTrap::FragTrap(const std::string _name) {
-    this->_name = _name;
+FragTrap::FragTrap(const std::string name) {
+    _name = name;
     _hitPoints = 100;
     _energyPoints = 100;
     _attackDamage = 30;
     std::cout << "FragTrap parametrize constructor called" << std::endl;
 }
 
-FragTrap::FragTrap(const FragTrap &other){
+FragTrap::FragTrap(const FragTrap &other) : ClapTrap(){
     _name = other._name;
     _hitPoints = other._hitPoints;
     _energyPoints = other._energyPoints;

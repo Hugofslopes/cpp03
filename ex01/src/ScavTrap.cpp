@@ -3,17 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ScavTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hfilipe- < hfilipe-@student.42porto.com    +#+  +:+       +#+        */
+/*   By: hfilipe- <hfilipe-@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/21 14:25:39 by hfilipe-          #+#    #+#             */
-/*   Updated: 2025/05/21 18:13:48 by hfilipe-         ###   ########.fr       */
+/*   Updated: 2025/05/21 20:45:58 by hfilipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ScavTrap.hpp"
 
 ScavTrap::ScavTrap() {
-    _name = "Default Scav";
+    _name = "default Scav";
     _hitPoints = 100;
     _energyPoints = 50; 
     _attackDamage = 20;
@@ -28,7 +28,7 @@ ScavTrap::ScavTrap(const std::string _name) {
     std::cout << "ScavTrap parametrized constructor called" << std::endl;
 }
 
-ScavTrap::ScavTrap(const ScavTrap &other){
+ScavTrap::ScavTrap(const ScavTrap &other) : ClapTrap(){
     _name = other._name;
     _hitPoints =  other._hitPoints;
     _energyPoints = other._energyPoints;

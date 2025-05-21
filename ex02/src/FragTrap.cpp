@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   FragTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hfilipe- < hfilipe-@student.42porto.com    +#+  +:+       +#+        */
+/*   By: hfilipe- <hfilipe-@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/21 18:02:24 by hfilipe-          #+#    #+#             */
-/*   Updated: 2025/05/21 18:14:28 by hfilipe-         ###   ########.fr       */
+/*   Updated: 2025/05/21 20:45:36 by hfilipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ FragTrap::FragTrap(const std::string _name) {
     std::cout << "FragTrap parametrize constructor called" << std::endl;
 }
 
-FragTrap::FragTrap(const FragTrap &other){
+FragTrap::FragTrap(const FragTrap &other) : ClapTrap(){
     _name = other._name;
     _hitPoints = other._hitPoints;
     _energyPoints = other._energyPoints;
