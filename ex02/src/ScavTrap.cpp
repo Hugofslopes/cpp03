@@ -6,7 +6,7 @@
 /*   By: hfilipe- <hfilipe-@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/21 20:44:53 by hfilipe-          #+#    #+#             */
-/*   Updated: 2025/05/21 20:45:28 by hfilipe-         ###   ########.fr       */
+/*   Updated: 2025/05/21 20:51:21 by hfilipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ ScavTrap::ScavTrap(const std::string _name) {
     std::cout << "ScavTrap parametrized constructor called" << std::endl;
 }
 
-ScavTrap::ScavTrap(const ScavTrap &other) : ClapTrap(){
+ScavTrap::ScavTrap(const ScavTrap& other) : ClapTrap(other){
     _name = other._name;
     _hitPoints =  other._hitPoints;
     _energyPoints = other._energyPoints;
