@@ -6,7 +6,7 @@
 /*   By: hfilipe- < hfilipe-@student.42porto.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/20 13:53:07 by hfilipe-          #+#    #+#             */
-/*   Updated: 2025/05/21 17:49:45 by hfilipe-         ###   ########.fr       */
+/*   Updated: 2025/05/21 16:36:48 by hfilipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ class ClapTrap {
         unsigned int    getValues(char c) const;
         std::string     getName(void) const;
         
-    private:
+    protected:
         std::string		_name;
         unsigned int	_hitPoints;
         unsigned int	_energyPoints;

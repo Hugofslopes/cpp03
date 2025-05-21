@@ -1,7 +1,7 @@
 #include "../includes/ScavTrap.hpp"
 
 ScavTrap::ScavTrap() {
-    _name = "Default Scav";
+    _name = "Default";
     _hitPoints = 100;
     _energyPoints = 50; 
     _attackDamage = 20;
@@ -41,5 +41,5 @@ ScavTrap::~ScavTrap(){
 }
 
 void ScavTrap::guardGate(){
-    std::cout << "ScavTrap is now in Gatekeeper mode" << std::endl << std::endl;;
+    std::cout << "ScavTrap is now in Gatekeeper mode" << std::endl;
 }

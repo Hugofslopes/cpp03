@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   FragTrap.cpp                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: hfilipe- < hfilipe-@student.42porto.com    +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/21 18:02:24 by hfilipe-          #+#    #+#             */
-/*   Updated: 2025/05/21 18:14:28 by hfilipe-         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "FragTrap.hpp"
 
 FragTrap::FragTrap() {
@@ -52,5 +40,5 @@ FragTrap::~FragTrap() {
 }
 
 void FragTrap::highFivesGuys(void) {
-    std::cout << "High five ? Why not!! :))" << std::endl << std::endl;;
+    std::cout << "High five ? Why not!! :))" << std::endl;
 }

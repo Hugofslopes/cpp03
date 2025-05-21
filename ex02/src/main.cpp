@@ -3,20 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hfilipe- <hfilipe-@student.42porto.com>    +#+  +:+       +#+        */
+/*   By: hfilipe- < hfilipe-@student.42porto.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/16 11:46:54 by hfilipe-          #+#    #+#             */
-/*   Updated: 2025/05/20 18:44:02 by hfilipe-         ###   ########.fr       */
+/*   Updated: 2025/05/21 18:08:28 by hfilipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ScavTrap.hpp"
+#include "../includes/FragTrap.hpp"
 
-int main( void ) {
-	ClapTrap Clap("Manel");
+int main(void) {
+	FragTrap Fragy("Happy");
 
-	Clap.attack("Jhonny");
-	Clap.takeDamage(5);
-	Clap.beRepaired(10);
+	Fragy.attack("Sad");
+	Fragy.takeDamage(5);
+	Fragy.beRepaired(10);
+	Fragy.highFivesGuys();
+	Fragy.takeDamage(110);
 	
 }

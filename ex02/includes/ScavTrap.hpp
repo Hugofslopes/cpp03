@@ -1,12 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ScavTrap.hpp                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: hfilipe- < hfilipe-@student.42porto.com    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/05/21 14:55:11 by hfilipe-          #+#    #+#             */
+/*   Updated: 2025/05/21 14:56:41 by hfilipe-         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #ifndef SCAVTRAP_HPP
 # define SCAVTRAP_HPP
 
-# include <iostream>
 # include "ClapTrap.hpp"
 
 class ScavTrap : ClapTrap{
-
     public:
         ScavTrap();    
         ScavTrap(const std::string _name);
@@ -16,5 +25,4 @@ class ScavTrap : ClapTrap{
 
         void guardGate();
 };
-
 #endif
